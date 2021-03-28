@@ -1,0 +1,53 @@
+# IG using lists
+# returns a list of edges
+
+def constructIGv2(n, m, clauses):
+    # n = (positive) variable count
+    # 2 internal variables per variable. x => x and ~x
+    # m = clause count. 2 edges per (u,v) clause (~u, v)(~v, u)
+    # Key: positive vars = var*2-1 ; negative vars = (-1)*var*2
+    variable_count = n * 2
+    variables = list(range(1, variable_count + 1))
+    # ea original variable has its positive and negated versions
+    clauses = [[2*x-1 if x > 0 else -1*x*2 for x in c] for c in clauses]
+    edges = []
+    for clause in clauses:
+        lit1 = clause[0]
+        lit2 = clause[1]
+        # even vars are negations, odd vars are positives
+        not_lit1 = lit1-1 if lit1 % 2 == 0 else lit1+1
+        not_lit2 = lit2-1 if lit2 % 2 == 0 else lit2+1
+        edge1 = [not_lit1, lit2]
+        edge2 = [not_lit2, lit1]
+        if edge1 not in edges:
+            edges.append(edge1)
+        if edge2 not in edges:
+            edges.append(edge2)
+    return edges
+
+# IG using dictionaries
+# returns a dictionary of lists of edges {1: [v1,v2], ...,}
+def constructIGv3(n, m, clauses):
+    """Compute Implication G. Return vertices and edges in adj dic"""
+    # n = (positive) variable count
+    # 2 internal variables per variable. x => x and ~x
+    # m = clause count. 2 edges per (u,v) clause (~u, v)(~v, u)
+    # Key: positive vars = var*2-1 ; negative vars = (-1)*var*2
+    variable_count = n * 2
+    variables = list(range(1, variable_count + 1))
+    clauses = [[2*x-1 if x > 0 else -1*x*2 for x in c] for c in clauses]
+
+    edgesD = {}
+    for v in variables:
+        edgesD[v] = []
+    for clause in clauses:
+        lit1 = clause[0]
+        lit2 = clause[1]
+        # even vars are negations, odd vars are positives
+        not_lit1 = lit1-1 if lit1 % 2 == 0 else lit1+1
+        not_lit2 = lit2-1 if lit2 % 2 == 0 else lit2+1
+        # assign to the adj dict
+        edgesD[not_lit1].append(lit2)
+        edgesD[not_lit2].append(lit1)
+
+    return variables, edgesD
