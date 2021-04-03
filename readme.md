@@ -45,12 +45,10 @@ A repository containing exercises and materials for [Coursera's Data Structure a
 - [Binary heap](https://en.wikipedia.org/wiki/Binary_heap)
 
 ### 3. Algorithms on Graphs
-
-3.1 Algorithms
 - [Depth-first search (DFS)](https://en.wikipedia.org/wiki/Depth-first_search)
 - [Breadth-first search (BFS)](https://en.wikipedia.org/wiki/Breadth-first_search)
-- [Topological sorting](https://en.wikipedia.org/wiki/Topological_sorting)
 - [Directed acyclic graph (DAG)](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
+- [Transpose/converse/reverse graph](https://en.wikipedia.org/wiki/Transpose_graph)
 - [Component (undirected graphs)](https://en.wikipedia.org/wiki/Component_(graph_theory))
 - [Strongly connected component (directed graphs)](https://en.wikipedia.org/wiki/Strongly_connected_component)
 - [Bipartite graph](https://en.wikipedia.org/wiki/Bipartite_graph)
@@ -58,9 +56,28 @@ A repository containing exercises and materials for [Coursera's Data Structure a
 - [Bellman-Ford algorithm](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm)
 
 ### 4. Algorithms on Strings
+- [Longest common substring problem](https://en.wikipedia.org/wiki/Longest_common_substring_problem)
+- [Burrows-Wheeler transform](https://en.wikipedia.org/wiki/Burrows%E2%80%93Wheeler_transform)
+- [Knuth–Morris–Pratt algorithm](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
+- [Suffix array](https://en.wikipedia.org/wiki/Suffix_array)
+- [Trie](https://en.wikipedia.org/wiki/Trie)
 
 ### 5. Advanced Algorithms and Complexity
-
+- [Computational Complexity](https://en.wikipedia.org/wiki/Computational_complexity)
+- [P versus NP](https://en.wikipedia.org/wiki/P_versus_NP_problem)
+- [Topological sorting](https://en.wikipedia.org/wiki/Topological_sorting)
+- [Kosaraju's algorithm](https://en.wikipedia.org/wiki/Kosaraju%27s_algorithm)
 - [Tarjan's SCCs](https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm)
+- [Boolean satisfiability problem](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem)
+- [Simplex algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm)
+- [Graph Coloring](https://en.wikipedia.org/wiki/Graph_coloring)
+- [Independent Set](https://en.wikipedia.org/wiki/Independent_set_(graph_theory))
+- [Hamiltonian path](https://en.wikipedia.org/wiki/Hamiltonian_path)
+- [Gaussian Elimination](https://en.wikipedia.org/wiki/Gaussian_elimination)
+- [Edmonds-Karp algorithm](https://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm)
 
 ### 6. Genome Assembly Programming Challenge
+- [Sequence assembly](https://en.wikipedia.org/wiki/Sequence_assembly)
+- [k-mer](https://en.wikipedia.org/wiki/K-mer)
+- [Eulerian path](https://en.wikipedia.org/wiki/Eulerian_path)
+- [De Brujin graph](https://en.wikipedia.org/wiki/De_Bruijn_graph)
